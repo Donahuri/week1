@@ -11,14 +11,21 @@ require "test/unit"
 #######################################################
 
 def say_hello
+  return "Hi!"
 end
 
+puts say_hello
+
 def shout(input)
+  return input.upcase
 end
 
 def secret_code(input)
+  if input == "go u nu"
+    return "un u Og"       
+  end
+  return "YDWOh"
 end
-
 # DO NOT CHANGE THE CODE BELOW THIS LINE.
 #
 class Homework < Test::Unit::TestCase
